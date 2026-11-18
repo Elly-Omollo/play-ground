@@ -2,6 +2,8 @@
 import { goals } from "./lib/goals"
 import GoalCard from "./components/GoalCrad"
 import EmailInput from "./components/EmailInput"
+import LoginForm from "./components/Loginform/LoginForm"
+import Counter from "./components/Loginform/Counter"
 
 export function App() {
   return (
@@ -18,6 +20,14 @@ export function App() {
       <div className="bg-card">
         <label htmlFor="email">Enter your Email</label>
         <EmailInput />
+      </div>
+
+      <div>
+        <LoginForm />
+      </div>
+
+      <div>
+        <Counter />
       </div>
     </div>
   )
